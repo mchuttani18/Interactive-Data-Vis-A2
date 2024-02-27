@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 2</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 2</small>
+			Exploratory Data Analysis
+		</h1>
+
+		<p>
+			<strong>Milan Chuttani</strong> — <em>milanc@mit.edu</em>
+		</p>
+	</header>
+	<main>
+		<section>
+			<h2>Subtheme: Making a Case for Upzoning</h2>
+
+			<h3>Overall Analysis Questions</h3>
+			<p>
+				As a Massachusetts native growing up in suburb with significant exclusionary zoning, I regularly heard neighbors advocate against development to maintain the “character” of our town - phrases that, as Boston Indicators writes, often masks more insidious policies of “class and race discrimination” (<a href="https://www.bostonindicators.org/-/media/indicators/boston-indicators-reports/report-files/exclusionarybydesign_report_nov_8.pdf">Exclusionary by Design Report, 2023, p. 9</a>). Zoning is often used as a tool of oppression, exclusion and segregation in Massachusetts. Last week, Dedham, despite allowing multi-family zoning, denied a zoning variance that would have allowed for an abandoned restaurant to be converted into a food distribution center and housing supports for migrants seeking asylum (<a href="https://www.bostonglobe.com/2024/02/25/metro/we-simply-take-care-each-other-how-difficult-is-that-bitter-rift-erupts-dedham-over-rejected-bid-expand-meal-service-migrant-families/">Boston Globe, 2024</a>). An anti-immigrant resident coalition fought the variance highlighted by raising “traffic”, “loitering” and “safety” as concerns - racialized, xenophobic and bigoted sentiments masked under a facade of economic well being. 
+			</p>
+			<p>
+				Exclusionary zoning not only limits the life chances of low-income, immigrant, BIPOC, and other people who face structural racism, classism, and xenophobia - it also strips away at the empathy, humanity, and wellbeing of wealthier residents who live in these towns. Exclusionary zoning policies are not only inhumane, but also economic drains that waste time and resources in places like my hometown that face multi-year zoning litigations and appeals when residents fight against free meal sites, healthcare centers, and dignified shelter. In public schools, exclusionary zoning limits the possibility for children of all income levels to meet, exchange ideas, customs, and perspectives, and develop a shared sense of identity with other like-minded classmates that extends beyond class lines. 
+			</p>
+			<p>
+				In data visualizations, it’s common that wealthy suburbs are lauded for their high household income or elevated SAT scores, which then in turn encourages exclusionary zoning which can boost these metrics. In this assignment, I’d like to begin highlighting the harms of exclusionary zoning instead by exploring metrics such as zoning’s impacts on racial diversity (Question 2), economic diversity (Question 3), and geography (Question 1). 
+			</p>
+			<ol>
+				<li>Which towns and cities in Greater Boston have the highest rates of exclusionary zoning?</li>
+				<li>How does exclusionary zoning impact the racial diversity of municipalities?</li>
+				<li>How does exclusionary zoning impact the distribution of low, middle, and high income households?
+				</li>
+			</ol>
+		</section>
+
+		<section>
+			<h2>Discoveries & Insights</h2>
+
+			<figure>
+				<img src="./img/Figure 1.png" alt="" />
+				<figcaption>
+					I am not surprised that suburbs with high rates of exclusionary zoning tend to be to the north and west of Boston, as these areas primarily developed in the wake of white flight and “big downzone” during the 1960s and 70s. However, I was surprised by several outliers: towns like Wayland, Medfield and Holliston have no areas that are exclusively single family zoning despite being surrounded by towns with 100% exclusionary zoning. As someone familiar with the area, Wayland (0% single family) and Weston (100% single family) have extremely similar characteristics as high-income, predominantly White areas with large property lots. This raises two new questions for me: 
+					<br/> 1) What external policies or social factors may cause towns inclusionary zoning to resemble towns with exclusionary zoning? (outside of scope of today’s report) 
+					<br/> 2) How are very high (>$200,000) and very low (<$40,000) income houses distributed by town, especially in municipalities with both single and multi family zones?					
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="./img/Figure 2.png" alt="" />
+				<figcaption>
+					This figure shows the percentage of the total households in a town with incomes greater than >200,000 disaggregated by whether these households exist in a single family only (orange) or more inclusionary (blue) zones. The top four towns with the largest percent of high-income homes are close to 100% single family, however, again, there are several surprising outliers (i.e. Carlisle, Wayland) with a large proportion of high-income households but with minimal zones with only single family zoning. This figure raises questions around whether there are spatial clusters of high-income households in both single-family and multi-family zoning areas (explored in Figures 4 and 5). 
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="./img/Figure 3.png" alt="" />
+				<figcaption>
+					This graph shows distributions of low-income households (<$40,000) by town, highlighting that most low income households are in multi-family zones. However, again there are several outliers, where towns with high rates of single-family zoning also welcome a large percentages of low-income homes (i.e. Peabody, Randolph, and Nahant). Similarly, many towns with high rates of inclusionary zoning (i.e. Southborough and Holliston) are unwelcoming to low-income households. These graphs raise questions around whether zoning alone is a significant predictor of household income, and may lead to additional efforts (outside of this exploratory analysis) around modeling correlations between single family only zoning and household income. 
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="./img/Figure 4.png" alt="" />
+				<figcaption>
+					Single-family zones with a large portion of high-income households tend to cluster southwest of Boston near Dover, Sherborn, Wellesley and Weston (left). Clusters of high-income households in multi-family zones (right) tend to be dispersed further out of the city to the northwest and southwest near I-495 (i.e. Concord, Carlisle, and Medfield) and exurbs on north and south shores. 
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="./img/Figure 5.png" alt="" />
+				<figcaption>
+					There are few single-family zones with low-income households, with Randolph serving as an exception. Far more low-income households live in areas with inclusionary zoning than single family zoning as demonstrated by the large number of municipalities colored in darker green on the right map. However, this map groups low-income households as those earning under $40,000 - how might the likelihood of living in a single or multi-family zone change for people across all income spectrums? 
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="./img/Figure 6.png" alt="" />
+				<figcaption>
+					This chart shows the percentage of all households in an income bracket that are located in single family (orange) or multi-family (blue) zones. Households earning more than $200,000 annually are 2.4x more likely to live in a single-family zone than those earning less than $10,000, which aligns with observations gathered in Figures 4 and 5. Surprisingly, however, is that over 60% of high-income households still reside within areas with inclusionary zoning. 
+
+					Additional tools used: Groupings and mutated fields in R, and calculated fields in Tableau. 
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="./img/Figure 7.png" alt="" />
+				<figcaption>
+					This bubble diagram shows the relative population of Black, Hispanic/Latinx, Asian, and White residents in inclusionary and exclusionary zones by suburb. Boston has been excluded from the chart. Each bubble represents a town, with the bubble’s size reflecting the total number of households from each race or ethnic group. Two bubbles exist in each column for towns with both single and multi-family zoning. White residents are more likely than Latinx (2.1x), Black (1.3x), and Asian (1.2x) residents to live in single-family zones. 
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="IMAGE_FILENAME" alt="" />
+				<figcaption>
+				ENTER IMAGE CAPTION HERE.
+				</figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<h2>Summary</h2>
+
+			<p>This exploratory analysis showed stark differences between tracts with inclusive and exclusive zoning practices across most towns in the Greater Boston area. Black, Asian and Latinx residents were far more likely to live in multi-family zones than their White counterparts. While high-income residents were split between living in single and multi-family zones, only 15% of residents with very low incomes (<$10,000 per household) lived in single-family zones. 
+				</p>
+				<p>				Given these trends, I would have expected that inclusionary zoning practices would lead to more economic diversity across all geographies. However, significant outliers exist - towns like Wayland that have few low-income families despite its inclusionary zoning policies, or Randolph which is welcoming to many low-income families despite its city-wide single-family zoning.  These outliers warrant further investigation as to the social, political, and economic forces that drive continued segregation by income.  
+				</p>
+		</section>
+	</main>
+</body>
+</html>
