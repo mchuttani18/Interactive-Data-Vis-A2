@@ -1,0 +1,9 @@
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.title important {
+  text-align: left; 
+  font-weight: normal;
+}
